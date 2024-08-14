@@ -52,7 +52,7 @@ const Register = () => {
         const v1=USER_REGEX.test(user);
         const v2=PWD_REGEX.test(pwd);
         
-        if(!v1 || v2){
+        if(!v1 || !v2){
             setErrMsg("Invalid Entry");
             return;
         }
