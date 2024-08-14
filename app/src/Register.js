@@ -51,6 +51,7 @@ const Register = () => {
         e.preventDefault();
         const v1=USER_REGEX.test(user);
         const v2=PWD_REGEX.test(pwd);
+        
         if(!v1 || v2){
             setErrMsg("Invalid Entry");
             return;
@@ -72,7 +73,7 @@ const Register = () => {
         <section>
            <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live='assertive'>{errMsg}</p>
            <h1>Register</h1>
-           <form onsubmit={handleSubmit}>
+           <form onSubmit={handleSubmit}>
               <label htmlFor='username'>
                 Username:
                 <span className={validName ? 'valid' : 'hide'}>
