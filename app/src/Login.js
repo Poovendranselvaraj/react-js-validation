@@ -67,7 +67,7 @@ const Login = () => {
       ) : (
 
         <section>
-          <p ref={errRef} className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+          <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
           <h1>Sign In</h1>
           <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username:</label>
@@ -86,7 +86,7 @@ const Login = () => {
               id='Password'
               onChange={(e) => setPwd(e.target.value)}
               value={pwd}
-              required
+              
             />
             <button>Sign In</button>
           </form>
