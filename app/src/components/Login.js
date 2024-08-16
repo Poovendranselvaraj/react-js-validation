@@ -36,6 +36,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     // we dont need to use the event object, so we can remove it
     e.preventDefault();
+    console.log("inside handle submit")
     try {
       const res = await axios.post(LOGIN_URL, JSON.stringify({ user, pwd }), {
         headers: {
@@ -48,9 +49,10 @@ const Login = () => {
       const accessToken = res?.data?.accessToken;
       const roles = res?.data?.roles;
       setAuth({user,pwd,roles,accessToken});
-
       setUser("");
       setPwd("");
+      console.log("success");
+      console.log(from)
       navigate(from,{replace:true});
     } catch (err) {
       if(!err?.response){

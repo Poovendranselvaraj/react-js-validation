@@ -1,5 +1,5 @@
 import Register from './Register';
-import Login from './Login';
+import Login from './components/Login';
 import Home from './components/Home';
 import Layout from './components/Layout';
 import Missing from './components/Missing';
