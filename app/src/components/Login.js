@@ -51,8 +51,7 @@ const Login = () => {
       setAuth({user,pwd,roles,accessToken});
       setUser("");
       setPwd("");
-      console.log("success");
-      console.log(from)
+       
       navigate(from,{replace:true});
     } catch (err) {
       if(!err?.response){
