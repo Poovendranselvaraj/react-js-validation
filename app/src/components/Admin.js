@@ -1,14 +1,13 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-// import Users from './Users'
+import Users from './Users'
 
 const Admin = () => {
   return (
     <section>
-      <h2>Admin Page</h2>
+      <h1>Admin Page</h1>
       <br />
-      {/* <Users/>
-      <br /> */}
+      <Users/>
+      <br />
       <div className="flexGrow">
         <Link to="/">Home</Link>
       </div>
