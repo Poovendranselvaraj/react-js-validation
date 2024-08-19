@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import useAxoisPrivate from "../hooks/useAxoisPrivate";
+import useAxoisPrivate from "../hooks/useAxiosPrivate";
 import { useNavigate,useLocation } from "react-router-dom";
 
 const Users = () => {
