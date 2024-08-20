@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import useAuth from "../hooks/useAuth";
-import { Link,useNavigate,useLocation  } from "react-router-dom";
+import { Link, useNavigate,useLocation  } from "react-router-dom";
 import useInput from "../hooks/useInput";
 import useToggle from "../hooks/useToggle";
 
@@ -18,7 +18,7 @@ const Login = () => {
   const userRef = useRef(null);
   const errRef = useRef(null);
 
-  const [user, resetUser, UserAttribs] =  useInput('user',"");
+  const [user, resetUser, UserAttribs] =  useInput('user','')
   const [pwd, setPwd] = useState(""); 
   const [errMsg, setErrMsg] = useState("");
   const [check, toggleCheck] = useToggle('persist',false);
