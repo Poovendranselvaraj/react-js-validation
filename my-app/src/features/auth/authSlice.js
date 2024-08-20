@@ -7,7 +7,7 @@
         setCredentials: (state, action) => {
             const { user, accessToken } = action.payload;
             state.user = user;
-            state.token = token;
+            state.token = accessToken;
         },
         logout: (state, action) => {
             state.user = null;
