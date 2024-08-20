@@ -42,8 +42,7 @@ const Login = () => {
         withCredentials: true,
       });
       const accessToken = res?.data?.accessToken;
-      const roles = res?.data?.roles;
-      setAuth({user,pwd,roles,accessToken});
+      setAuth({user,accessToken});
       resetUser();
       setPwd("");
       navigate(from,{replace:true});
