@@ -41,15 +41,11 @@ const Login = () => {
         },
         withCredentials: true,
       });
-      console.log(JSON.stringify(res?.data));
-      // console.log(JSON.stringify(res));
       const accessToken = res?.data?.accessToken;
       const roles = res?.data?.roles;
       setAuth({user,pwd,roles,accessToken});
-      // setUser("");
       resetUser();
       setPwd("");
-       
       navigate(from,{replace:true});
     } catch (err) {
       if(!err?.response){
